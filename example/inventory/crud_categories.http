@@ -1,20 +1,20 @@
 POST http://localhost:3000/addcategory.test.php
 Content-Type: application/x-www-form-urlencoded
 
-categoryID=___
-&categoryCode=___
-&categoryName=___
+categoryID=2
+&categoryCode=BASS
+&categoryName=BASS
 ###
 GET http://localhost:3000/listcategories.test.php
 ###
 POST http://localhost:3000/changecategory.test.php
 Content-Type: application/x-www-form-urlencoded
 
-categoryID=___
-&categoryCode=___
-&categoryName=___
+categoryID=1
+&categoryCode=BASS
+&categoryName=BASS
 ###
 POST http://localhost:3000/removecategory.test.php
 Content-Type: application/x-www-form-urlencoded
 
-categoryID=___
+categoryID=2
