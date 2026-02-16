@@ -1,0 +1,22 @@
+POST http://localhost:3000/additem.test.php
+Content-Type: application/x-www-form-urlencoded
+
+itemID=2
+&itemName=guitar
+&categoryID=2
+&listPrice=999.99
+###
+GET http://localhost:3000/listitems.test.php
+###
+POST http://localhost:3000/changeitem.test.php
+Content-Type: application/x-www-form-urlencoded
+
+itemID=2
+&itemName=change guitar
+&categoryID=2
+&listPrice=699.99
+###
+POST http://localhost:3000/removeitem.test.php
+Content-Type: application/x-www-form-urlencoded
+
+itemID=2

@@ -1,9 +1,9 @@
 POST http://localhost:3000/addcategory.test.php
 Content-Type: application/x-www-form-urlencoded
 
-categoryID=2
-&categoryCode=BASS
-&categoryName=BASS
+categoryID=1
+&categoryCode=GUITAR
+&categoryName=GUITAR
 ###
 GET http://localhost:3000/listcategories.test.php
 ###
