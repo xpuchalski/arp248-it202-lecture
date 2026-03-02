@@ -1,0 +1,18 @@
+
+<?php
+require_once("item.php");
+$itemID = $_POST['itemID'];
+if ((trim($itemID) == '') or (!is_numeric($itemID))) {
+   echo "<h2>Sorry, you must enter a valid itemID</h2>\n";
+} else if (!Item::findItem($itemID)) {
+   echo "<h2>Sorry, An item with ID #$itemID does not exist</h2>\n";
+} else {
+   $itemID = $_POST['itemID'];
+   $item = Item::findItem($itemID);
+   $result = $item->removeItem();
+   if ($result)
+       echo "<h2>Item $itemID removed</h2>\n";
+   else
+       echo "<h2>Sorry, problem removing item $itemID</h2>\n";
+}
+?>
