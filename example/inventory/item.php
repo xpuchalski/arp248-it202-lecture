@@ -109,5 +109,28 @@ class Item
        $db->close();
        return $result;
    }
+      static function getItemsByCategory($categoryID)
+   {
+       $db = getDB();
+       $query = "SELECT * from guitar_items where category_id = $categoryID";
+       $result = $db->query($query);
+       if (mysqli_num_rows($result) > 0) {
+           $items = array();
+           while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+               $item = new Item(
+                   $row['item_id'],
+                   $row['item_name'],
+                   $row['category_id'],
+                   $row['list_price']
+               );
+               array_push($items, $item);
+           }
+           $db->close();
+           return $items;
+       } else {
+           $db->close();
+           return NULL;
+       }
+   }
 }
 ?>

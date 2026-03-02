@@ -9,3 +9,5 @@ INSERT INTO GUITAR.guitar_categories (category_id, category_code, category_name)
 (1, 'ELEC', 'Electric Guitars'),
 (2, 'ACOU', 'Acoustic Guitars'),
 (3, 'BASS', 'Bass Guitars');
+
+SELECT * FROM GUITAR.guitar_categories;
