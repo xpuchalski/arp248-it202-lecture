@@ -52,3 +52,5 @@ CREATE TABLE games_arp248
   #this is my dad's scores, he does average around this number.
   SELECT COUNT(score) AS games, AVG(score) AS average FROM games_arp248 WHERE bowlerid = 103;
   #this is me, I have 1 good game then 1 bad game and stop for the day.
+  
+SELECT * FROM games_arp248 JOIN bowlers_arp248 ON games_arp248.bowlerid = bowlers_arp248.bowlerid WHERE games_arp248.bowlerid;

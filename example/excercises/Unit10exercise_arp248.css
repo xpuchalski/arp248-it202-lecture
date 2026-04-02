@@ -1,0 +1,32 @@
+/* Name, Course & Section, Course Name, Assignment, yourid@njit.edu */
+main {
+   font-family: 'Courier New', Courier, monospace;
+   background-color: coral;
+   margin: 0 auto;
+   width: 550px;
+   border: 5px solid darkslategray;
+   padding: 1em 2em;
+}
+h1 {
+   color: darkslategray;
+   margin-top: 0;
+}
+div {
+   margin-bottom: 0.5em;
+}
+label {
+   float: left;
+   width: 16em;
+   text-align: right;
+}
+input {
+   margin-left: 1em;
+}
+#calculate {
+   margin-bottom: 1em;
+}
+p {
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 1em;
+ color: darkslategray;
+}
